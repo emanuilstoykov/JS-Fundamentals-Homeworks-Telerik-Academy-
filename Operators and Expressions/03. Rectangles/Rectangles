@@ -1,0 +1,11 @@
+function solve(args) {
+    var h = +args[0],
+        w = +args[1],
+        area,
+        perimeter;
+        
+    area = h * w;
+    perimeter = (2 * w) + (2 * h);
+    console.log(area.toFixed(2), perimeter.toFixed(2));
+    
+}
