@@ -1,0 +1,5 @@
+function solve(args) {
+    var firstNumber = +args[0],
+        secondNumber = (firstNumber >>> 3).toString(2) + "";
+    console.log(secondNumber[secondNumber.length - 1]);
+}
