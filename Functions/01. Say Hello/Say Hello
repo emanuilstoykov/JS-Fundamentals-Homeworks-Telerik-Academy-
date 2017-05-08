@@ -1,0 +1,4 @@
+function solve(args) {
+  let name = args;
+console.log('Hello, '+name + '!');
+}
