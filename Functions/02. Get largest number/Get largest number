@@ -1,0 +1,22 @@
+function solve(args) {
+    var input = args[0].split(' ').map(Number),
+        firstNumber = input[0],
+        secondNumber = input[1],
+        thirdNumber = input[2];
+        
+
+    function getMax(firstNumber,secondNumber) {
+        if(firstNumber > secondNumber) {
+            return firstNumber;
+        } else {
+            return secondNumber;
+        }
+    }
+
+    if (getMax(firstNumber, secondNumber) > thirdNumber) {
+        console.log(getMax(firstNumber,secondNumber));
+    } else {
+        console.log(thirdNumber);
+    }
+
+}
