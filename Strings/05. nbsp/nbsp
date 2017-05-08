@@ -1,0 +1,6 @@
+function solve(args) {
+   let input = String(args),
+   output = '';
+   output = input.replace(/ /g, '&nbsp;');
+   console.log(output);
+}
