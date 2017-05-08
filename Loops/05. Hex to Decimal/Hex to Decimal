@@ -1,0 +1,15 @@
+function solve(args) {
+  let input = String(args);
+
+  let hexKey = '0123456789ABCDEF';
+  let sum = 0;
+
+  let len = input.length;
+  for (let i = 0; i < len; i += 1) {
+    let digit = hexKey.indexOf(input[i]);
+
+    sum = digit + sum * 16;
+  }
+
+  console.log(sum);
+}
