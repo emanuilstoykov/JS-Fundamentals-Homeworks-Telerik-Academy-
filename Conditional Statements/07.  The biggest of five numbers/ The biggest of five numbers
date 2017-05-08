@@ -1,0 +1,20 @@
+function solve(args) {
+    var a = +args[0],
+        b = +args[1],
+        c = +args[2],
+        d = +args[3],
+        e = +args[4];
+
+        if (a > b && a > c && a > d && a > e) {
+        console.log(a);
+    } else if (a < b && b > c && b > d && b > e) {
+        console.log(b);
+    } else if (d > a && d > e && d > c && d > b){
+        console.log(d);
+    } else if (e > a && e > d && e > c && e > b) {
+        console.log(e);
+    } else {
+        console.log(c);
+    }
+
+}
